@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuscaBiz - Localização de Empresas</title>
+    <!-- CSS relativo à raiz -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>BuscaBiz - Localização de Empresas</header>
+
+    <main class="container">
+        <div class="filters">
+            <select id="ufSelect">
+                <option value="">Selecione o UF</option>
+            </select>
+            <select id="municipioSelect">
+                <option value="">Selecione o Município</option>
+            </select>
+            <select id="bairroSelect">
+                <option value="">Selecione o Bairro</option>
+            </select>
+            <select id="categoriaSelect">
+                <option value="">Todas as Categorias</option>
+            </select>
+            <input type="text" id="buscaInput" placeholder="Buscar empresa..." aria-label="Buscar empresa">
+        </div>
+
+        <section id="empresaList" aria-live="polite"></section>
+    </main>
+
+    <!-- JS relativo à raiz -->
+    <script src="./empresas.json" type="text/javascript"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

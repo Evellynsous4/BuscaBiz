@@ -1,0 +1,135 @@
+/* Fonte, cores e fundo */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: #f8f9fa;
+    color: #333;
+}
+
+/* Cabeçalho idêntico ao fornecido */
+header {
+    background: #052f58;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 26px;
+    font-weight: 800;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Filtros e busca */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+    background: #f1f3f5;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.filters select,
+.filters input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background: white;
+    transition: border 0.3s;
+}
+
+.filters select:focus,
+.filters input:focus {
+    border-color: #042341;
+    outline: none;
+}
+
+/* Lista de empresas (cards) */
+.empresa-card {
+    border: 1px solid #e9ecef;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.empresa-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.empresa-card h3 {
+    margin: 0 0 8px 0;
+    font-size: 20px;
+    color: #052f58;
+}
+
+.empresa-card p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.empresa-card a {
+    color: #042341;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.empresa-card a:hover {
+    text-decoration: underline;
+}
+
+/* Botões */
+.btn {
+    background: #042341;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #052f58;
+}
+
+/* Mini mapas dentro dos cards */
+.mapa-container {
+    width: 100%;
+    height: 220px;
+    margin-top: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.mapa-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+    }
+
+    .empresa-card {
+        padding: 12px;
+    }
+}
